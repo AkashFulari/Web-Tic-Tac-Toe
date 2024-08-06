@@ -1,0 +1,42 @@
+<!--
+*
+* Author: Akash K Fulari
+* Contact-mail: akashfulari31@gmail.com
+* Description: Basic Tic-Tac-Toe game using HTML, CSS, & JavaScript
+* Created: 2024-08-06 23:09:28
+ Last Modification Date: 2024-08-06 23:31:20
+*
+*-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKT3 Game - Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles/ak-t3.min.css" />
+</head>
+
+<body>
+    <div class="PlayGlass">
+        <div class="grid">
+            <label>Player1: <span id="p1" class="playerName player1"></span></label>
+            <label>Player2: <span id="p2" class="playerName player2"></span></label>
+        </div>
+        <div class="grid">
+            <div><label class="flex-row">Winner: <span id="winnerPlayer" class="playerName">--</span></labe>
+            </div>
+            <div><label class="flex-row">Current Player: <span id="indicator"
+                        class="indicator playerName player1"></span></labe>
+            </div>
+        </div>
+        <div class="grid">
+            <div></div>
+            <div><button onclick="replay()">Replay</button></div>
+        </div>
+        <div id="playBoard" class="playBoard"></div>
+    </div>
+</body>
+<script src="script/ak-t3.min.js"></script>
+
+</html>
